@@ -9,3 +9,4 @@ permalink: /wdym/
 - Since this is a blog, of all sites.
 - Blog hosted on Github Pages and runs on Jekyll, which generates static sites from Markdown language.
 - Based on a tweaked template of Jekyll called [jekyll-now](https://github.com/barryclark/jekyll-now) by Barry Clark.
+- Will post on both Tamil and English. (But not on the same post)
