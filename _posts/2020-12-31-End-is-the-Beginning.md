@@ -1,7 +1,7 @@
 ---
 layout: post
 title: End is the Beginning
-date: 2020-12-31 00:30:00 +0530
+date: 2020-12-31 00:30:00
 ---
 
 Something to welcome the new year.  
