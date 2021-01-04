@@ -4,7 +4,7 @@ title: Proctoring and Your Personality
 date: 2021-01-04 19:45:00 +0530
 ---
 
-We all have written exams since we learnt to write alphabets and numbers.  
+Ever since we learnt to write alphabets and numbers, we all have been writing exams.    
 
 Heck, the earliest tests you would have written were nothing but alphabets and numbers. It was one of the most difficult subjects to learn!
 We would stare in awe at our seniors in 1st grade! But it won't matter for us anyway. Our focus was not at getting marks, not at getting compelling grades. It was at returning to home soon as possible.  
