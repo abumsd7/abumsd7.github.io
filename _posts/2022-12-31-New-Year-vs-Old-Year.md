@@ -1,10 +1,10 @@
 ---
 layout: post
-title: New Year vs Old Year - Top 5 Changess
+title: New Year vs Old Year - Top 5 Changes
 date: 2022-12-31 22:30:00 +0530
 ---
 
-So we are once again ready to welcome another addition to the long series of numbers representing the footsteps of history.
+So we are once again ready to welcome another addition to the long series of numbers representing the footsteps of history.  
 
 At the end of each stride, history beckons the riders (us) to look back and cherish upon the precious, invaluable, irritable and forgettable memories we made along the 730 days and nights. After looking back, I must say, these are the Top 5 changes between the New year and the Old year.
 
