@@ -5,6 +5,7 @@ date: 2023-06-06 22:30:00 +0530
 ---
 
 I opened my eyes. An unknown ceiling awaited me. The scene was straight outta some popular TV show. Guess the high-effort binge watches were finally taking its toll. But on a serious note, this scenery didn't vanish when I rubbed my eyes. The reality of the situation washed over me. Cold sweat started to pour down, cleansing the reality - no that's not it. In fact, it soaked the reality so hard that the bedsheet was a sweaty mess.
+
 <!--more-->
 Was the bedsheet even part of the reality, or it's a dream... Nothing was certain until I ascertained where I was. I looked over the ceiling again. The ever trusty, crusty and dusty fan was missing. No wonder I didn't cough upon waking. I looked around the room and saw an air conditioner. For a fleeting moment, the thought of an air conditioner being inferior to the fan crossed my mind. I took the cardboard laying on the cupboard shelves and blowed away the infuriating thought. I then looked around for the AC remote - unironically powered by batteries. The temperature showed 20 degrees Celsius. 
 
