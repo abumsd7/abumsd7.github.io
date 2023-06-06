@@ -7,7 +7,7 @@ date: 2022-01-21 21:56:00 +0530
 "One peek to your right and you're out!", claimed Pigeon A as it stepped forward on the narrow path.
 
 Pigeon B joined the conversation. "One peek to your left and you're out!", it added another rule to the unexpected game of life or death.
-
+<!--more-->
 "One peek to your back and you both are out!", Pigeon C said authoritatively, as it "dove" towards the concrete terrace.
 
 "Hey Pigeon E, I think we shouldn't be entertaining the fantasies of these fools. Let's just walk towards the other side and fly to that nice-looking tree." Pigeon D's little advice seemed to go over the beak of E.

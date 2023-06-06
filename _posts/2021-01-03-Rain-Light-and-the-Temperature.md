@@ -7,7 +7,7 @@ date: 2021-01-03 12:40:00 +0530
 Aaron's mother asked him to check for the clothes she left hanging in the terrace.  
 
 Then out of nowhere, he met with the hard hitting realization - he had forgot to remove the 100 rupees note from his shirt pocket. It was painful enough to jolt him awake.
-
+<!--more-->
 Slowly accustoming to the dim light due to the rainclouds, Aaron woke up. Confusion was painted all over his face. One could argue that he was dumbfounded about the darkness in early morning, but they are severly mistaken.  
 
 Taking the phone he placed earlier on the bedside table, he pressed the Power button to check time.  

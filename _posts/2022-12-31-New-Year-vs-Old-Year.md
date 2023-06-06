@@ -7,7 +7,7 @@ date: 2022-12-31 22:30:00 +0530
 So we are once again ready to welcome another addition to the long series of numbers representing the footsteps of history.  
 
 At the end of each stride, history beckons the riders (us) to look back and cherish upon the precious, invaluable, irritable and forgettable memories we made along the 730 days and nights. After looking back, I must say, these are the Top 5 changes between the New year and the Old year.
-
+<!--more-->
 ### 1. Calendar
 
 A valuable and useful tool to keep track of our daily life, calendars have become an inseperable part of human routine. From marking national holidays to using them as writing pads and notebook covers, paper calendars have been an excellent utility for frugal survival as a budding school student. Working adults, however, are more used to mundane and boring, but functional calendars sponsored by MNCs. Atleast before 28 years pass in our lifetime, we can safely experience a fresh calendar every year. In five years, this will not count as a change anymore! (For me)

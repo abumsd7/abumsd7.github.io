@@ -7,7 +7,7 @@ date: 2021-01-02 13:10:00 +0530
 Smartphones have overtaken Desktops and laptops in general usage.  
 
 They are also turning into pocket productivity devices. Any of the long existing facilities in a PC are being ported to them, in additional to exclusive features which make use of the handheld touch ecosystem established by them.  
-
+<!--more-->
 However, as much as one would think about the rapid growth of smartphone usage, one can't argue about
 it's heavy-duty handling capabilities. The highest memory load one could put on a smartphone is by playing graphics-intensive videogames.  
 

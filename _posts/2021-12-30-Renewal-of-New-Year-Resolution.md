@@ -7,7 +7,7 @@ date: 2021-12-30 22:05:00 +0530
 It was 2 days ago when I received reminder from the free domain provider I had registered for my blog last year. 
 
 Then I remembered what I had intended to do during that time of the year - the end of 2020. 
-
+<!--more-->
 It was a crazy year for many people including the college student me, who was doing the final year of my degree. 
 On that fateful day of 30th December this strange idea rose to the top of my list of interests. 
 

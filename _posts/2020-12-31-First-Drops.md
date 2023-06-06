@@ -7,7 +7,7 @@ date: 2020-12-31 00:00:00 +0530
 It has started to spill. Or has it been forced to?
 
 Picturing something on *your mind* before it's been made is a forgettable thing to do.  
-
+<!--more-->
 And I mean it in a literal sense. How many morning dreams and classroom imaginations we would
 have experienced in our life, only to forget it the moment our mind starts to wander into reality?  
 
