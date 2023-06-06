@@ -8,7 +8,7 @@ Started 2020 with the possibility
 of achieving many positive things  
 Alas... what followed was a test of feasibility  
 To break people for whom it greatly stings.  
-
+<!--more-->
 Oblivious to the cries of our neighbour  
 We stayed our own way, chose to remain in the dark  
 Went down the drain, hardship and labour  

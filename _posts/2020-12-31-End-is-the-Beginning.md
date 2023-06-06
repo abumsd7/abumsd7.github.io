@@ -10,7 +10,7 @@ Something to welcome the new year.
 format of the game, filled with dominating one side shows, dramatic comebacks, final over snatches and even
 exhilirating super-overs. What was not expected was the game dragging into cancellation - not by rain, not by
 light failures, not by team troubles. But by something which was unpredictable just like the game itself.
-
+<!--more-->
 While all these calamities were ravaging us in this month, and this
 year on a whole,  one thought was nagging my mind. To vent out
 the constant thought process we have been put into ever since this unbreakable Eastern Lock was forged on March

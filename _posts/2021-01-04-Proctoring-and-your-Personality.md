@@ -8,7 +8,7 @@ Ever since we learnt to write alphabets and numbers, we all have been writing ex
 
 Heck, the earliest tests you would have written were nothing but alphabets and numbers. It was one of the most difficult subjects to learn!
 We would stare in awe at our seniors in 1st grade! But it won't matter for us anyway. Our focus was not at getting marks, not at getting compelling grades. It was at returning to home soon as possible.  
-
+<!--more-->
 Our Kindergarten teachers would try their best to squeeze through the language skill you are currently able to use. As a result, you more or less subconsciously manage to have a grasp of all the alphabetical mumbo jumbo. Like an open book, your actions and mannerisms will be at constant supervision. It won't bother you one bit.  
 
 With your increasing self-consciousness proportional to your age, your awareness of surroundings increases dramatically. An unknown human staring at the back of the neck will suddenly feel a bit tingling to you. You also, at a point, will decide to keep your interests out for a while and decide to focus on what others think about you. While you are writing your test, you will find yourself on the edge of anxiety whenever the Supervisor is around. Even though you know that you don't have any malicious intent, your uncertainity with yourself means that vulnerability will envelop your thoughts. 
