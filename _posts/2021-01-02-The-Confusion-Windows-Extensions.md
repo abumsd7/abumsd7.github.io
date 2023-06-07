@@ -2,6 +2,7 @@
 layout: post
 title: Confusions related to default extension Settings in Windows
 date: 2021-01-02 13:10:00 +0530
+tags: explanatory technology
 ---
 
 Smartphones have overtaken Desktops and laptops in general usage.  

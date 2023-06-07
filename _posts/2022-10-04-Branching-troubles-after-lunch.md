@@ -2,6 +2,7 @@
 layout: post
 title: Branching troubles after lunch
 date: 2022-10-04 15:00:00 +0530
+tags: story animals fantasy
 ---
 After finishing the generous lunch from the family in the house in front of his usual chilling spot, Cawin sat in his favourite seat, the extending 2nd secondary branch below the V shaped diverging branch of the neem tree. 
 <!--more-->

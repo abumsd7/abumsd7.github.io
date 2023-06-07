@@ -2,6 +2,7 @@
 layout: post
 title: End is the Beginning
 date: 2020-12-31 13:30:00 +0530
+tags: rants explanatory surreal
 ---
 
 Something to welcome the new year.  

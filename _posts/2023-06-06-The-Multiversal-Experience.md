@@ -2,7 +2,7 @@
 layout: post
 title: The Multiversal Experience
 date: 2023-06-06 22:30:00 +0530
-tag: multiverse
+tags: multiverse surreal imagination
 ---
 
 I opened my eyes. An unknown ceiling awaited me. The scene was straight outta some popular TV show. Guess the high-effort binge watches were finally taking its toll. But on a serious note, this scenery didn't vanish when I rubbed my eyes. The reality of the situation washed over me. Cold sweat started to pour down, cleansing the reality - no that's not it. In fact, it soaked the reality so hard that the bedsheet was a sweaty mess.
