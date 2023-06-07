@@ -2,7 +2,7 @@
 layout: post
 title: Tribute to 2020 Poem
 date: 2021-01-01 00:00:00 +0530
-tags: poem yearly
+tags: poem yearly human
 ---
 
 Started 2020 with the possibility  
