@@ -2,6 +2,7 @@
 layout: post
 title: First Drops
 date: 2020-12-31 00:00:00 +0530
+tags: surreal imagination explanatory
 ---
 
 It has started to spill. Or has it been forced to?

@@ -2,6 +2,7 @@
 layout: post
 title: Five pigeons in a fine noon
 date: 2022-01-21 21:56:00 +0530
+tags: story animals fantasy
 ---
 
 "One peek to your right and you're out!", claimed Pigeon A as it stepped forward on the narrow path.

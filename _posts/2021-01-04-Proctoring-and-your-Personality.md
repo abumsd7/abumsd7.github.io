@@ -2,6 +2,7 @@
 layout: post
 title: Proctoring and Your Personality
 date: 2021-01-04 19:45:00 +0530
+tags: rants explanatory
 ---
 
 Ever since we learnt to write alphabets and numbers, we all have been writing exams.    
