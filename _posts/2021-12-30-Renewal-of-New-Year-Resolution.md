@@ -2,7 +2,7 @@
 layout: post
 title: Renewal of New Year Resolution(?)
 date: 2021-12-30 22:05:00 +0530
-tags: reminder yearly
+tags: reminder yearly human
 ---
 
 It was 2 days ago when I received reminder from the free domain provider I had registered for my blog last year. 
