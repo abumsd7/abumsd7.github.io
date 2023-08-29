@@ -24,6 +24,8 @@
         <header class="masthead clearfix">
           <div class="site-info">
             <a href="{{ site.baseurl }}/" ><img class="site-banner" src="{{ site.baseurl }}/images/banner.png" /></a>
+            <!-- This page was last updated on {{ "now" | date: "%Y-%m-%d %H:%M" }} -->
+            <p class="site-description">This page was last updated on {{ "now" | date: "%A, %B %d, %Y , %H:%M" }}</p>
           </div>
           <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
           <div class="site-info">
