@@ -217,7 +217,8 @@ img {
 }
 
 .site-description {
-  margin: -5px 0 0 0;
+  display: block;
+  margin: 0 auto;
   color: $gray;
   font-size: 16px;
 
