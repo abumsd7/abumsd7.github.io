@@ -4,7 +4,10 @@
 //
 
 // Colors
-$blue: #4183C4;
+$blue: #55acef;
+$green: #55fecf;
+$pale: #73958b;
+$dark: #001b1f;
 
 // Grays
 $black: #000;
@@ -18,9 +21,8 @@ $white: #fff;
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
-$courier: 'Courier New', monospace;
-$tamil: "Tamil";
-
+$tamil: "Tamil", sans-serif;
+$oxford: "Oxford", sans-serif;
 
 // Mobile breakpoints
 @mixin mobile {
