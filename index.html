@@ -7,7 +7,7 @@ layout: default
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
+      <h4>Published: {{ page.date | date: "%B %e, %Y" }}</h4>
       <div class="entry">
         {{ post.excerpt }}
       </div>
@@ -15,4 +15,5 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+  <p><a href="{{ site.baseurl }}/posts/">Do you want to see all the posts? Click me.</a></p>
 </div>
