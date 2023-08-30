@@ -166,15 +166,15 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 25px;
+  height: 25px;
   margin-right: 15px;
   margin-top: 23px;
 
   @include mobile {
     float: none;
     display: block;
-    margin-right: 15px;
+    margin: 0 auto;
   }
 
   img {
@@ -193,7 +193,7 @@ img {
   float: none;
   display: block;
   margin: 0 auto;
-  text-align:center;
+  text-align: center;
 }
 
 .site-banner {
@@ -215,16 +215,18 @@ img {
 
 .site-info {
   float: left;
+  width: 50%;
 
   @include mobile {
     float: none;
-    display: block;
+    width: 50%;
     margin: 0 auto;
   }
 }
 
 .site-name {
   margin: 0;
+  text-align: left;
   margin-top: 23px;
   color: $white;
   cursor: pointer;
@@ -232,6 +234,12 @@ img {
   font-weight: 300;
   font-size: 22px;
   letter-spacing: 1px;
+  @include mobile {
+    float: none;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+  }
 }
 
 .site-description {
@@ -253,9 +261,10 @@ nav {
 
   @include mobile {
     float: none;
-    margin-top: 80px;
+    margin-top: 10px;
     display: block;
     font-size: 16px;
+    width: 100%
   }
 
   a {
