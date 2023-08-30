@@ -1,7 +1,4 @@
----
----
-
-//
+--- --- //
 // IMPORTS
 //
 
@@ -19,7 +16,7 @@ html {
 }
 
 body {
-	background: $dark;
+  background: $dark;
   font: 20px/1.4 $tamil;
   color: $white;
 }
@@ -31,7 +28,12 @@ body {
   width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $oxford;
   color: $green;
   font-weight: bold;
@@ -47,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 30px;
+
   a {
     color: inherit;
   }
@@ -72,13 +75,16 @@ p {
 a {
   color: $green;
   text-decoration: none;
-	cursor: pointer;
-  &:hover, &:active {
+  cursor: pointer;
+
+  &:hover,
+  &:active {
     color: $pale;
   }
 }
 
-ul, ol {
+ul,
+ol {
   margin: 15px 0;
   padding-left: 30px;
 }
@@ -91,19 +97,25 @@ ol {
   list-style-type: decimal;
 }
 
-ol ul, ul ol, ul ul, ol ol {
+ol ul,
+ul ol,
+ul ul,
+ol ol {
   margin: 0;
 }
 
-ul ul, ol ul {
+ul ul,
+ol ul {
   list-style-type: circle;
 }
 
-em, i {
+em,
+i {
   font-style: italic;
 }
 
-strong, b {
+strong,
+b {
   font-weight: bold;
 }
 
@@ -126,6 +138,7 @@ img {
   color: $black;
   background: $lightGray;
 }
+
 ::selection {
   color: $black;
   background: $lightGray;
@@ -135,12 +148,12 @@ img {
 // http://nicolasgallagher.com/micro-clearfix-hack/
 .clearfix:before,
 .clearfix:after {
-    content: " ";
-    display: table;
+  content: " ";
+  display: table;
 }
 
 .clearfix:after {
-    clear: both;
+  clear: both;
 }
 
 /*********************/
@@ -166,8 +179,8 @@ img {
 
 .site-avatar {
   float: left;
-  width: 70px;
-  height: 70px;
+  width: 30px;
+  height: 30px;
   margin-right: 15px;
 
   @include mobile {
@@ -180,20 +193,31 @@ img {
     border-radius: 5px;
   }
 }
+
+.site-headers {
+  float: none;
+  display: block;
+  margin: 0 auto;
+}
+
 .site-banner {
-  float: center;
-  width: 90%;
+  width: 80%;
   height: 70%;
-  margin-left: 15px;
-  @include mobile {
-    float: none;
-    display: block;
-    margin: 0 auto;
-  }
+  float: none;
+  display: block;
+  margin: 0 auto;
 
   img {
     border-radius: 5px;
   }
+
+}
+
+.site-belowbanner {
+  width: 80%;
+  float: none;
+  display: block;
+  margin: 0 auto;
 }
 
 .site-info {
@@ -258,12 +282,12 @@ nav {
 // .main
 //
 
-.posts > .post {
+.posts>.post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
 }
 
-.posts > .post:last-child {
+.posts>.post:last-child {
   padding-bottom: 1em;
   border-bottom: none;
 }
@@ -287,6 +311,7 @@ nav {
     font-size: 15px;
   }
 }
+.post-content { text-align: justify; }
 
 .wrapper-footer {
   margin-top: 50px;
