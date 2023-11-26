@@ -6,6 +6,7 @@ tags: how_to_guide surreal explanatory human
 ---
 
 Are you a diligent, responsible human who is exceptionally punctual in completing your tasks? Are you impeccable in doing what you had wanted without regrets or time delays? Are you increasingly interested in the dark side of doing things as you please instead of following stipulated/self-assigned schedules? Here are the important steps to follow if you want to relax, unwind and put a wrench in your daily work productivity.
+
 <!--more-->
 
 ## Create schedules, but in mind
