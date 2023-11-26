@@ -8,7 +8,7 @@ tags: how_to_guide surreal explanatory human
 Are you a diligent, responsible human who is exceptionally punctual in completing your tasks? Are you impeccable in doing what you had wanted without regrets or time delays? Are you increasingly interested in the dark side of doing things as you please instead of following stipulated/self-assigned schedules? Here are the important steps to follow if you want to relax, unwind and put a wrench in your daily work productivity.
 <!--more-->
 
-### Create schedules, but in mind
+## Create schedules, but in mind
 
 It is natural to write down schedules and stick it on walls (or) create it as reminders on your mobile calendar device to keep you motivated and alert. How does one alleviate the increasing stress of a well managed schedule? Well, it's time for you to scrap schedules completely out of your walls and To-do/calendar apps. It's time to make use of the best storage device in your lifetime.
 
@@ -24,7 +24,7 @@ Now we come to Category B. Though Categories A and C can also have a higher poss
 
 Congrats! You have successfully stepped into the shoes of an amateur procrastinator. Before cursing your mind, remember that it was a coordinated attack influenced by soothing environmental conditions. Your hand and notebook were ready. It was only you, who decided to postpone it.
 
-### Set imaginary deadlines (subject to change)
+## Set imaginary deadlines (subject to change)
 
 Now that you have entered a comfortable state of mind to push the activity to a later date, here comes the important part.
 
@@ -38,7 +38,7 @@ Moving onto the workplace setup, your personal deadlines get bound to the work d
 
 In an average business institution, we do get fixed deadlines by the business. A target will be set, and each employee with their designated roles and teams will work towards achieving it. Usually, there is very little wiggle room for procrastination. However, there is an inspiring way to acquire the time for it in both educational and workplace setups. No, it's not cutting corners. Let's see it in the next passage.
 
-### Your self-confidence and self-belief needs a boost!
+## Your self-confidence and self-belief needs a boost!
 
 Even when you are not procrastinating, self-confidence is a key aspect in developing your future. It impacts what sort of decisions you might take in your life. It helps to overcome hesitancy and lets you choose the decision without any regret. A belief in your ability that you can do it - this is the key ingredient to a successful procrastination. 
 
@@ -53,7 +53,7 @@ As a beginner with neither of the above, it would be obvious that you will only 
 
 One question that might come out of the above info, is this. "If you make too many mistakes, doesn't it affect your confidence in yourself about doing the work?" Yes it might. That's why the path of the Master is being unraveled only by a select few. This is where having a strong self-belief comes in. Just blind self-belief will be sufficient to overcome the doubts on your skill gain (Not recommended if you are part of an MLM or something scummy).
 
-### Do "Selective" over-working
+## Do "Selective" over-working
 
 Either way, you have acquired the skill now. When you start working on the thing you have been working for a while now, you will start seeing certain efficient ways in which you could handle it, saving time and energy. Thus, you have mastered the key concept of master procrastination.
 
@@ -65,10 +65,10 @@ In the context of an educational setup, let's imagine the smart worker as the pe
 
 Thus, a new master of procrastination was born!
 
-### Going beyond deadlines???
+## Going beyond deadlines???
 
 Is it still procrastination if you delay your work so late that it goes beyond the deadlines? No! Definitely not. That's just being lazy. (This article was started on September 2 and finished on November 26. It stayed in draft for close to 3 months. But there were no deadlines for me to complete it on time, so...)
 
-Congratulations if you read this fully in one go, right after opening the link. You have failed the Procrastinator test and must be a diligent smart worker. If you had read a little and planned to read it in parts later, you might have some innate skill for being the Master Procrastinator. If you cheated and skipped to the last part to see the ending, you might be **_Just an Ordinary ~~Person~~ Procrastinator_**. Or you are just lazy. Or you didn't want to waste your precious time. Which makes you, a smart worker... I guess?
+Congratulations if you read this fully in one go, right after opening the link, you have failed the Procrastinator test and must be a **diligent smart worker**. If you had read a little and planned to read it in parts later, you might have some innate skill for being the **Master Procrastinator**. If you cheated and skipped to the last part to see the ending, you might be **🎼 Just an Ordinary ~~Person~~ Procrastinator 🎼...** Or you are just lazy. Or you didn't want to waste your precious time. Which makes you, a smart worker... I guess?
 
 _(Disclaimer: This article has some satirical elements, with a dose of some Instagram Reels/YouTube Shorts/LinkedIn Posts/"X"witter Quotes Motivation. You may or may not take it seriously. Overuse of the term "procrastination" is regretted.)_
