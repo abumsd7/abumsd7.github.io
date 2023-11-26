@@ -10,7 +10,7 @@ Are you a diligent, responsible human who is exceptionally punctual in completin
 
 ## Create schedules, but in mind
 
-It is natural to write down schedules and stick it on walls (or) create it as reminders on your mobile calendar device to keep you motivated and alert. How does one alleviate the increasing stress of a well managed schedule? Well, it's time for you to scrap schedules completely out of your walls and To-do/calendar apps. It's time to make use of the best storage device in your lifetime.
+It is natural to write down schedules and stick it on walls (or) create it as reminders on your mobile calendar device to keep you motivated and alert. How does one alleviate the increasing stress of a well managed schedule? Well, it's time for you to scrap schedules completely out of your walls and To-do/calendar apps. It's time to make use of the best storage device that stays with you throughout your lifetime.
 
 You might have remembered - at the end of class, your teachers would be reminding you about the activity they had discussed during the course of the class, in case someone slept through. Followed by that, they will use the common phrase - "Don't forget to complete it by tomorrow's class!". 
 
@@ -22,7 +22,9 @@ When the time comes for homework, the Category A will complete the work on time 
 
 Now we come to Category B. Though Categories A and C can also have a higher possibility of procrastination, I have ignored them for the sake of explaining the ability of human memory. With regard to mental notes, the possibility of them popping into your memory will be greatly dependent on the surrounding circumstances. A satisfying bus ride back to home, or a fun activity after returning home - have consequences on the longevity of the mental note. However, this is a necessary evil to induce and amplify the effect of mental relaxation - something that is achieved when you complete a mentally taxing activity. The periodical distractions create an illusion of peace and quiet, allowing you to continue your day without worrying about the activity. Your mind will say to you: "Hmm, it might not be that bad. The relaxation has been great, and I don't want it to end. Let's try this tomorrow - with a fresh state of mind".
 
-Congrats! You have successfully stepped into the shoes of an amateur procrastinator. Before cursing your mind, remember that it was a coordinated attack influenced by soothing environmental conditions. Your hand and notebook were ready. It was only you, who decided to postpone it.
+In workplaces though, you might be asked to track your events in a daily calendar app. The event organizer also adds your email in their invitations, robbing you off any choice to ignore the notifications and reminders. Basically, it's mandatory to attend such scheduled events. But none of these scheduled events are going to monitor what you do in your workplace. It's either you (or) the one above you who is going to track it (only if you are in their constant viewpoint). This means that you kinda make your own mind-schedules for the work you would be doing on a daily basis. As an adult, various responsibilities and activities would have to be performed by you, which serve as conflicts to your inner-scheduling. Thus, at the end of the day, you will be left with the mindset of "Lets push this for tomorrow. Hope I can complete it then".
+
+Congrats! You have successfully stepped into the shoes of an amateur procrastinator. Before cursing your mind, remember that it was a coordinated attack influenced by soothing (or) grueling human emotions. Your hand and notebook (or) your calendar app were ready to track your activities. It was only you, who decided to postpone it to tomorrow with virtual post-it notes.
 
 ## Set imaginary deadlines (subject to change)
 
