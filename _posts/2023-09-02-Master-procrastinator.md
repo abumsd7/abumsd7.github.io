@@ -5,7 +5,8 @@ date: 2023-09-02 22:30:00 +0530
 tags: how_to_guide surreal explanatory human
 ---
 
-Are you a diligent, responsible human who is exceptionally punctual in completing your tasks? Are you impeccable in doing what you had wanted without regrets or time delays? Are you increasingly interested in the dark side of doing things as you please instead of following stipulated/self-assigned schedules? Here are the steps to follow if you want to relax, unwind and put a wrench in your daily work productivity. You can read through, or
+Are you a diligent, responsible human who is exceptionally punctual in completing your tasks? Are you impeccable in doing what you had wanted without regrets or time delays? Are you increasingly interested in the dark side of doing things as you please instead of following stipulated/self-assigned schedules? Here are the important steps to follow if you want to relax, unwind and put a wrench in your daily work productivity.
+<!--more-->
 
 ### Create schedules, but in mind
 
@@ -52,7 +53,7 @@ As a beginner with neither of the above, it would be obvious that you will only 
 
 One question that might come out of the above info, is this. "If you make too many mistakes, doesn't it affect your confidence in yourself about doing the work?" Yes it might. That's why the path of the Master is being unraveled only by a select few. This is where having a strong self-belief comes in. Just blind self-belief will be sufficient to overcome the doubts on your skill gain (Not recommended if you are part of an MLM or something scummy).
 
-### Selective over-working.
+### Do "Selective" over-working
 
 Either way, you have acquired the skill now. When you start working on the thing you have been working for a while now, you will start seeing certain efficient ways in which you could handle it, saving time and energy. Thus, you have mastered the key concept of master procrastination.
 
