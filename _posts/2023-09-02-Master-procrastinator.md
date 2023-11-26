@@ -1,6 +1,6 @@
 ---
 layout: post
-title: How to be a master procrastinator?
+title: How To:Be a master procrastinator?
 date: 2023-09-02 22:30:00 +0530
 tags: how_to_guide surreal explanatory human
 ---
