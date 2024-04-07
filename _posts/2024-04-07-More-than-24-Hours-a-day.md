@@ -1,7 +1,7 @@
 ---
 layout: post
 title: How To ; Live More than 24hrs a day?
-date: 2024-02-07 22:30:00 +0530
+date: 2024-04-07 22:30:00 +0530
 tags: how_to_guide surreal explanatory human
 ---
 
