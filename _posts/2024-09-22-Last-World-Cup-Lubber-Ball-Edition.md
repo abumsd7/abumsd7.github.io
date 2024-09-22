@@ -1,7 +1,7 @@
 ---
 layout: post
 title: கடைசி உலகக் கோப்பை - லப்பர் பந்து பதிப்பு (பாகம் 1)
-date: 2024-09-22 20:30:00 +0530
+date: 2024-09-22 20:00:00 +0530
 tags: story surreal tamilpost human
 ---
 
