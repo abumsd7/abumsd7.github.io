@@ -8,9 +8,9 @@ Sorry for being so late about this!
 <!--more--> 
 But it's better late than never!
 
-Let's skip the niceties - you must have scanned an invite and may have already known.
+Let's skip the niceties - you must have scanned an invite and may have already known. If not, here's the digital invite. It's simple and conveys the necessary information. 
 
-About my marriage that's happening on the 4th of September, 2025.
+{% pdf "/files/pdf/Invite_Sept4.pdf" width=350px height=600px no_link %}
 
 It happens on Thursday, a weekday. 
 
