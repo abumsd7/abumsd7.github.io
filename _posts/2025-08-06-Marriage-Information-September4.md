@@ -37,7 +37,7 @@ Anbu Mahal, Perambalur-Attur Main Road, Perambalur 621212.
 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3913.213928823292!2d78.85639527479769!3d11.245667350363775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bab1b2a78d6b8f7%3A0xacb7d76357f3055e!2sAnbu%20mahal!5e0!3m2!1sen!2sin!4v1754497593376!5m2!1sen!2sin" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-[Click me to go to Official Govt. of Tamilnadu Website on Perambalur, incase you are looking for places to visit other than the marriage venue.😒](https://perambalur.nic.in/)
+[Some people asked me this, so I'm adding it. Click me to go to Official Govt. of Tamilnadu Website on Perambalur, incase you are looking for places to visit other than the marriage venue.😒](https://perambalur.nic.in/)
 
 If you have chosen to travel the distance, here are some tips...
 
