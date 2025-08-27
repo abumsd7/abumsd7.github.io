@@ -10,6 +10,8 @@ But it's better late than never! I am really sorry if you did not visit this pag
 
 Some friends messaged me then - thank you for your curiosity. I appreciate your effort.
 
+I know the questions that's on your mind - When was this wedding planned? Why I was late to inform? There are no specific reasons. I was being too much of a procrastinator and overthinking about this, that's all. I regret the delay, but I must do the duty of informing to the people who know me. This is what that led me to here. A blog post with a lot of details.
+
 Let's skip the niceties - you must have scanned an invite and may have already known. If not, here's the digital invite. It's simple and conveys the necessary information. 
 
 {% pdf "/files/pdf/Invite_Sept4.pdf" width=350px height=600px no_link %}
