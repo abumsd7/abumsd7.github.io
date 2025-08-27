@@ -6,7 +6,9 @@ tags: human reminder explanatory how_to_guide
 ---
 Sorry for being so late about this!  
 <!--more--> 
-But it's better late than never!
+But it's better late than never! I am really sorry if you did not visit this page on August 7. I posted a QR code on Instagram with the blog post link.
+
+Some friends messaged me then - thank you for your curiosity. I appreciate your effort.
 
 Let's skip the niceties - you must have scanned an invite and may have already known. If not, here's the digital invite. It's simple and conveys the necessary information. 
 
@@ -46,9 +48,9 @@ If you have chosen to travel the distance, here are some tips...
  - Chennai Kilambakkam to Perambalur New Bus Stand : 239km
  - Perambalur New Bus Stand to Old Bus Stand: 2.7km
  - Perambalur Old Bus Stand to Anbu Mahal (wedding venue): 1.1km
- - Below is the snapshot of TNSTC webpage, taken on August 8, 11pm.
+ - Below is the snapshot of TNSTC webpage, taken on August 27, 11am.
 
-![Buses]({{ site.baseurl }}/images/Screenshot 2025-08-06 225322.png)
+![Buses]({{ site.baseurl }}/images/Screenshot 2025-08-27 115151.png)
 
 ## Train riders:
  - All trains from Chennai to Ariyalur are on waitlist at the time of writing this article : once again I apologize for this delay in communication.
