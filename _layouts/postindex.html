@@ -2,43 +2,109 @@
 layout: default
 ---
 
-<article class="page">
-
-  <h1>{{ page.title }}</h1>
-
+<div class="postindex-container">
+  {% if content and content != "" %}
   <div class="entry">
     {{ content }}
   </div>
-</article>
-{% include tagcloud.html %}
-{% for post in site.posts  %}
-    {% capture this_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-    {% capture this_month %}{{ post.date | date: "%B" }}{% endcapture %}
-    {% capture next_year %}{{ post.previous.date | date: "%Y" }}{% endcapture %}
-    {% capture next_month %}{{ post.previous.date | date: "%B" }}{% endcapture %}
+  {% endif %}
 
-    {% if forloop.first %}
-    <h2 id="{{ this_year }}-ref">{{this_year}}</h2>
-    <h3 id="{{ this_year }}-{{ this_month }}-ref">{{ this_month }}</h3>
-    <ul>
-    {% endif %}
+  <!-- Filter Toolbar (Year and Month) -->
+  <div class="posts-filter-toolbar">
+    <div class="filter-group">
+      <label for="yearFilter">Year:</label>
+      <select id="yearFilter" class="filter-select">
+        <option value="all">All Years</option>
+      </select>
+    </div>
+    <div class="filter-group">
+      <label for="monthFilter">Month:</label>
+      <select id="monthFilter" class="filter-select">
+        <option value="all">All Months</option>
+        <option value="01">January</option>
+        <option value="02">February</option>
+        <option value="03">March</option>
+        <option value="04">April</option>
+        <option value="05">May</option>
+        <option value="06">June</option>
+        <option value="07">July</option>
+        <option value="08">August</option>
+        <option value="09">September</option>
+        <option value="10">October</option>
+        <option value="11">November</option>
+        <option value="12">December</option>
+      </select>
+    </div>
+    <div class="filter-count-badge" id="filterCountBadge"></div>
+  </div>
 
-    <li>{{ post.date }} <a href="{{ post.url }}">{{ post.title }} </a></li>
+  <!-- Simple Post List -->
+  <div class="posts-simple-list" id="postsList">
+    {% for post in site.posts %}
+    {% capture post_year %}{{ post.date | date: "%Y" }}{% endcapture %}
+    {% capture post_month %}{{ post.date | date: "%m" }}{% endcapture %}
+    <div class="post-list-item" data-year="{{ post_year }}" data-month="{{ post_month }}">
+      <span class="post-item-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="post-item-title">{{ post.title }}</a>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 
-    {% if forloop.last %}
-    </ul>
-    {% else %}
-        {% if this_year != next_year %}
-        </ul>
-        <h2 id="{{ next_year }}-ref">{{next_year}}</h2>
-        <h3 id="{{ next_year }}-{{ next_month }}-ref">{{ next_month }}</h3>
-        <ul>
-        {% else %}    
-            {% if this_month != next_month %}
-            </ul>
-            <h3 id="{{ this_year }}-{{ next_month }}-ref">{{ next_month }}</h3>
-            <ul>
-            {% endif %}
-        {% endif %}
-    {% endif %}
-{% endfor %}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var yearFilter = document.getElementById('yearFilter');
+  var monthFilter = document.getElementById('monthFilter');
+  var postsList = document.getElementById('postsList');
+  var countBadge = document.getElementById('filterCountBadge');
+
+  if (!postsList) return;
+  var items = Array.from(postsList.querySelectorAll('.post-list-item'));
+
+  // Extract unique years dynamically
+  var years = [];
+  items.forEach(function (item) {
+    var yr = item.getAttribute('data-year');
+    if (yr && years.indexOf(yr) === -1) {
+      years.push(yr);
+    }
+  });
+  years.sort().reverse();
+
+  years.forEach(function (yr) {
+    var opt = document.createElement('option');
+    opt.value = yr;
+    opt.textContent = yr;
+    yearFilter.appendChild(opt);
+  });
+
+  function applyFilter() {
+    var selectedYear = yearFilter.value;
+    var selectedMonth = monthFilter.value;
+    var visibleCount = 0;
+
+    items.forEach(function (item) {
+      var yr = item.getAttribute('data-year');
+      var mo = item.getAttribute('data-month');
+
+      var matchYear = (selectedYear === 'all' || yr === selectedYear);
+      var matchMonth = (selectedMonth === 'all' || mo === selectedMonth);
+
+      if (matchYear && matchMonth) {
+        item.style.display = 'flex';
+        visibleCount++;
+      } else {
+        item.style.display = 'none';
+      }
+    });
+
+    if (countBadge) {
+      countBadge.textContent = visibleCount + ' post' + (visibleCount === 1 ? '' : 's');
+    }
+  }
+
+  if (yearFilter) yearFilter.addEventListener('change', applyFilter);
+  if (monthFilter) monthFilter.addEventListener('change', applyFilter);
+  applyFilter();
+});
+</script>

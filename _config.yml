@@ -2,14 +2,17 @@
 # This file contains configuration flags to customize your site
 #
 
-# Name of your site (displayed in the header)
+# Site Title (displayed in browser tab / title bar)
+title: Spilled Out!
+
+# Name of your site / author (displayed in header)
 name: Abu Murugesan
 
 # Short bio or description (displayed in the header)
 description: Spilling out content through fingertips
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/abumsd7/abumsd7.github.io/master/images/avatar.png
+avatar: https://raw.githubusercontent.com/abums1210/abums1210.github.io/master/images/avatar.png
 
 timezone: Asia/Kolkata
 
@@ -21,29 +24,28 @@ timezone: Asia/Kolkata
 footer-links:
   dribbble:
   email: abumurugesan@gmail.com
-  facebook: abumsd7
+  facebook: abums1210
   flickr:
-  github: abumsd7
-  instagram: abumsd7
+  github: abums1210
+  instagram: abums1210
   linkedin: abu-murugesan
   pinterest:
   rss: haha
-  twitter: abumsd7
+  twitter: abums1210
   stackoverflow: # your stackoverflow profile, e.g. "users/50476/bart-kiers"
   youtube: channel/UC82EwXnSjQ3DYK8PgWmpfxw
   googleplus: # anything in your profile username that comes after plus.google.com/
 
 
-# Enter your Disqus shortname (not your username) to enable commenting on posts
-# You can find your shortname on the Settings page of your Disqus account
-disqus: https-spilledout-ml
+# Giscus comment system (github.com/giscus/giscus)
+giscus: true
 
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: G-0BJ0D871EK
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://spilledout.cf
+url: https://spilledout.cc
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)

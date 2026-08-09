@@ -3,15 +3,12 @@
 
 <head>
 
-  <title>Spilled Out!</title>
+  <title>{% if page.title %}{{ page.title }} – {{ site.title | default: "Spilled Out!" }}{% else %}{{ site.title | default: "Spilled Out!" }} – {{ site.description }}{% endif %}</title>
 
   {% include meta.html %}
   {% include collecttags.html %}
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9342601776677720"
     crossorigin="anonymous"></script>
-  <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
   <link rel="shortcut icon" href="{{ site.baseurl }}/images/favicon.png">
   <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
@@ -21,41 +18,290 @@
 </head>
 
 <body>
-  <div class="wrapper-masthead">
-    <div class="container">
-      <header class="masthead clearfix">
-        <div class="site-headers">
-          <a href="{{ site.baseurl }}/"><img class="site-banner" src="{{ site.baseurl }}/images/banner.png" /></a>
-          <!-- This page was last updated on {{ "now" | date: "%Y-%m-%d %H:%M" }} -->
-        </div>
-        <div class="site-belowbanner">
-          <p class="site-description">{{ site.description }}</p>
-          <p class="site-description">Last updated on {{ "now" | date: "%A, %B %d, %Y , %H:%M" }}</p>
-        </div>
-        <div class="site-info">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-          <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-        </div>
-        <nav>
-          <a href="{{ site.baseurl }}/">Home</a>
-          <a href="{{ site.baseurl }}/posts/">Posts</a>
-          <a href="{{ site.baseurl }}/wdym/">WDYM</a>
-        </nav>
-      </header>
+  <!-- Full-scale vertical sidebar for Desktop -->
+  <aside class="desktop-sidebar">
+    <div class="sidebar-top">
+      <a href="{{ site.baseurl }}/">
+        <img class="sidebar-banner-img" src="{{ site.baseurl }}/images/banner_vertical.png" alt="Banner Vertical" />
+      </a>
+    </div>
+    <nav class="sidebar-navbar">
+      {% include navbar_links.html %}
+    </nav>
+  </aside>
+
+  <!-- Mobile Top Sticky Header (Hides on Scroll Down, Shows on Scroll Up) -->
+  <header class="mobile-top-header mobile-only" id="mobileTopHeader">
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle Navigation Menu">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+    <a href="{{ site.baseurl }}/" class="mobile-header-banner">
+      <img src="{{ site.baseurl }}/images/banner.png" alt="Banner" />
+    </a>
+  </header>
+
+  <!-- Mobile Bottom Navigation Bar -->
+  <nav class="mobile-bottom-navbar mobile-only" id="mobileBottomNavbar">
+    {% include navbar_links.html %}
+  </nav>
+
+  <!-- Mobile Navigation Drawer Overlay (for overflow links) -->
+  <div class="mobile-drawer-overlay" id="mobileDrawerOverlay">
+    <div class="mobile-drawer-content">
+      <div class="mobile-drawer-header">
+        <h3>Menu</h3>
+        <span class="mobile-drawer-close" id="mobileDrawerClose">&times;</span>
+      </div>
+      <div class="mobile-drawer-links" id="mobileDrawerLinks"></div>
     </div>
   </div>
 
-  <div id="main" role="main" class="container">
+  <!-- Floating Scroll Action Button (Go to Top / Go to Bottom) -->
+  <button id="floatingScrollBtn" class="floating-scroll-btn scroll-to-bottom" aria-label="Scroll Page">
+    <svg class="scroll-icon icon-down" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="6 9 12 15 18 9"></polyline>
+    </svg>
+    <svg class="scroll-icon icon-up" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="display:none;">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <div id="main" role="main" class="main-layout-container container">
     {{ content }}
   </div>
 
   <div class="wrapper-footer">
     <div class="container">
       <footer class="footer">
-        {% include svg-icons.html %}
+        <div class="footer-simple-inline">
+          <span class="footer-label">written by</span>
+          <a href="{{ site.baseurl }}/profile/" class="footer-author">
+            <img src="{{ site.avatar }}" class="footer-avatar-circle" alt="{{ site.name }}" />
+            <span class="footer-author-name">{{ site.name }}</span>
+          </a>
+          <button class="footer-share-button" id="footerShareBtn" type="button" aria-label="Share page">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+              <polyline points="16 6 12 2 8 6"></polyline>
+              <line x1="12" y1="2" x2="12" y2="15"></line>
+            </svg>
+            <span id="shareBtnText">Share</span>
+          </button>
+        </div>
       </footer>
     </div>
   </div>
+
+  <!-- Image Lightbox Preview Modal -->
+  <div id="image-lightbox" class="lightbox-modal">
+    <span class="lightbox-close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img" alt="Preview">
+    <div id="lightbox-caption"></div>
+  </div>
+
+  <style>
+  .lightbox-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 27, 31, 0.92);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 85vh;
+    border-radius: 16px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8), 0 0 0 1px rgba(0, 211, 183, 0.3);
+    animation: zoomIn 0.3s ease;
+  }
+  #lightbox-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #55fecf;
+    padding: 15px 0;
+    font-family: "Oxford", sans-serif;
+    font-size: 16px;
+  }
+  .lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #55fecf;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  .lightbox-close:hover {
+    color: #fff;
+  }
+  @keyframes zoomIn {
+    from { transform: scale(0.85); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+  }
+  </style>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // 1. Post Image Lightbox Preview (Restricted ONLY to .post-content img)
+    var modal = document.getElementById('image-lightbox');
+    var modalImg = document.getElementById('lightbox-img');
+    var captionText = document.getElementById('lightbox-caption');
+    var closeBtn = document.getElementsByClassName('lightbox-close')[0];
+
+    var postImages = document.querySelectorAll('.post-content img');
+    postImages.forEach(function (img) {
+      img.addEventListener('click', function () {
+        modal.style.display = 'block';
+        modalImg.src = this.src;
+        captionText.innerHTML = this.alt || '';
+      });
+    });
+
+    if (closeBtn) {
+      closeBtn.addEventListener('click', function () {
+        modal.style.display = 'none';
+      });
+    }
+
+    if (modal) {
+      modal.addEventListener('click', function (e) {
+        if (e.target === modal || e.target === closeBtn) {
+          modal.style.display = 'none';
+        }
+      });
+    }
+
+    // 2. Mobile Top Header Hide-on-Scroll-Down, Show-on-Scroll-Up
+    var lastScrollY = window.scrollY;
+    var mobileHeader = document.getElementById('mobileTopHeader');
+    window.addEventListener('scroll', function () {
+      var currentScrollY = window.scrollY;
+      if (mobileHeader) {
+        if (currentScrollY > 50 && currentScrollY > lastScrollY) {
+          mobileHeader.classList.add('header-hidden');
+        } else {
+          mobileHeader.classList.remove('header-hidden');
+        }
+      }
+      lastScrollY = currentScrollY;
+    });
+
+    // 3. Dynamic Mobile Overflow Links & Sandwich Button (>5 nav items)
+    var bottomNav = document.getElementById('mobileBottomNavbar');
+    var menuToggle = document.getElementById('mobileMenuToggle');
+    var drawerOverlay = document.getElementById('mobileDrawerOverlay');
+    var drawerClose = document.getElementById('mobileDrawerClose');
+    var drawerLinks = document.getElementById('mobileDrawerLinks');
+
+    if (bottomNav) {
+      var navItems = bottomNav.querySelectorAll('.nav-item');
+      if (navItems.length > 5 && menuToggle) {
+        menuToggle.style.display = 'flex';
+      }
+    }
+
+    if (menuToggle && drawerOverlay) {
+      menuToggle.addEventListener('click', function () {
+        if (drawerLinks && bottomNav) {
+          drawerLinks.innerHTML = bottomNav.innerHTML;
+        }
+        drawerOverlay.classList.add('active');
+      });
+    }
+
+    if (drawerClose && drawerOverlay) {
+      drawerClose.addEventListener('click', function () {
+        drawerOverlay.classList.remove('active');
+      });
+    }
+
+    // 4. Floating Scroll Action Button (Hidden at Top & Bottom)
+    var scrollBtn = document.getElementById('floatingScrollBtn');
+    var iconDown = scrollBtn ? scrollBtn.querySelector('.icon-down') : null;
+    var iconUp = scrollBtn ? scrollBtn.querySelector('.icon-up') : null;
+
+    function updateScrollBtnState() {
+      if (!scrollBtn) return;
+      var scrollY = window.scrollY || window.pageYOffset;
+      var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+
+      // Hide if at top (Y <= 60) OR at bottom (Y >= maxScroll - 60)
+      if (scrollY <= 60 || (maxScroll > 0 && scrollY >= maxScroll - 60)) {
+        scrollBtn.classList.add('scroll-btn-hidden');
+      } else {
+        scrollBtn.classList.remove('scroll-btn-hidden');
+
+        // Show Go to Top if in lower half, Go to Bottom if in upper half
+        if (scrollY > (maxScroll / 2)) {
+          scrollBtn.classList.remove('scroll-to-bottom');
+          scrollBtn.classList.add('scroll-to-top');
+          if (iconDown) iconDown.style.display = 'none';
+          if (iconUp) iconUp.style.display = 'block';
+        } else {
+          scrollBtn.classList.remove('scroll-to-top');
+          scrollBtn.classList.add('scroll-to-bottom');
+          if (iconDown) iconDown.style.display = 'block';
+          if (iconUp) iconUp.style.display = 'none';
+        }
+      }
+    }
+
+    window.addEventListener('scroll', updateScrollBtnState);
+    window.addEventListener('resize', updateScrollBtnState);
+    updateScrollBtnState();
+
+    if (scrollBtn) {
+      scrollBtn.addEventListener('click', function () {
+        if (scrollBtn.classList.contains('scroll-to-top')) {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } else {
+          var targetTop = document.documentElement.scrollHeight - window.innerHeight;
+          window.scrollTo({ top: targetTop, behavior: 'smooth' });
+        }
+      });
+    }
+
+    // 5. Footer Share Button Handler
+    var shareBtn = document.getElementById('footerShareBtn');
+    var shareText = document.getElementById('shareBtnText');
+    if (shareBtn) {
+      shareBtn.addEventListener('click', function () {
+        var shareData = {
+          title: document.title,
+          url: window.location.href
+        };
+        if (navigator.share) {
+          navigator.share(shareData).catch(function () {});
+        } else if (navigator.clipboard) {
+          navigator.clipboard.writeText(window.location.href).then(function () {
+            if (shareText) {
+              var orig = shareText.innerText;
+              shareText.innerText = 'Copied!';
+              setTimeout(function () { shareText.innerText = orig; }, 2000);
+            }
+          });
+        }
+      });
+    }
+  });
+  </script>
 
   {% include analytics.html %}
 </body>

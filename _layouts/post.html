@@ -7,7 +7,7 @@ layout: default
   <span>
     {% for tag in page.tags %}
     {% capture tag_name %}{{ tag }}{% endcapture %}
-    <a href="/tag/{{ tag_name }}"><code class="tag_format"><nobr>{{ tag_name }}</nobr></code></a>
+    <a href="{{ site.baseurl }}/tag/{{ tag_name }}"><code class="tag_format"><nobr>{{ tag_name }}</nobr></code></a>
     {% endfor %}
     </span>
   <div class="date">
@@ -17,5 +17,5 @@ layout: default
   <div class="entry post-content">
     {{ content }}
   </div>
-  {% include disqus.html %}
+  {% include giscus.html %}
 </article>
