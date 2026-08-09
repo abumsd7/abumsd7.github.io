@@ -1,0 +1,58 @@
+<div class="social-grid">
+  {% assign fl = site.footer-links %}
+  {% if fl.facebook and fl.facebook != "" %}
+  <a href="https://facebook.com/{{ fl.facebook }}" target="_blank" rel="noopener" class="social-card">
+    <div class="social-card-name">Facebook</div>
+    <div class="social-card-handle">/{{ fl.facebook }}</div>
+  </a>
+  {% endif %}
+
+  {% if fl.instagram and fl.instagram != "" %}
+  <a href="https://instagram.com/{{ fl.instagram }}" target="_blank" rel="noopener" class="social-card">
+    <div class="social-card-name">Instagram</div>
+    <div class="social-card-handle">/{{ fl.instagram }}</div>
+  </a>
+  {% endif %}
+
+  {% if fl.github and fl.github != "" %}
+  <a href="https://github.com/{{ fl.github }}" target="_blank" rel="noopener" class="social-card">
+    <div class="social-card-name">GitHub</div>
+    <div class="social-card-handle">/{{ fl.github }}</div>
+  </a>
+  {% endif %}
+
+  {% if fl.linkedin and fl.linkedin != "" %}
+  <a href="https://linkedin.com/in/{{ fl.linkedin }}" target="_blank" rel="noopener" class="social-card">
+    <div class="social-card-name">LinkedIn</div>
+    <div class="social-card-handle">/{{ fl.linkedin }}</div>
+  </a>
+  {% endif %}
+
+  {% if fl.twitter and fl.twitter != "" %}
+  <a href="https://x.com/{{ fl.twitter }}" target="_blank" rel="noopener" class="social-card">
+    <div class="social-card-name">Twitter</div>
+    <div class="social-card-handle">/{{ fl.twitter }}</div>
+  </a>
+  {% endif %}
+
+  {% if fl.youtube and fl.youtube != "" %}
+  <a href="https://youtube.com/{{ fl.youtube }}" target="_blank" rel="noopener" class="social-card">
+    <div class="social-card-name">YouTube</div>
+    <div class="social-card-handle">/{{ fl.youtube }}</div>
+  </a>
+  {% endif %}
+
+  {% if fl.email and fl.email != "" %}
+  <a href="mailto:{{ fl.email }}" class="social-card">
+    <div class="social-card-name">Email</div>
+    <div class="social-card-handle">{{ fl.email }}</div>
+  </a>
+  {% endif %}
+
+  {% for custom in site.custom_socials %}
+  <a href="{{ custom.url }}" target="_blank" rel="noopener" class="social-card">
+    <div class="social-card-name">{{ custom.name }}</div>
+    <div class="social-card-handle">{{ custom.handle }}</div>
+  </a>
+  {% endfor %}
+</div>

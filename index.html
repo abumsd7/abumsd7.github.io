@@ -2,18 +2,50 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts limit:5 %}
-    <article class="post">
+<div class="homepage-layout">
+  <!-- Headline Header Section -->
+  <header class="headline-header">
+    <h1 class="headline-main-title">Headliner</h1>
+    <p class="headline-date">Last updated on {{ "now" | date: "%A, %B %d, %Y , %H:%M" }}</p>
+  </header>
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <code class="tag_format">{{ post.date | date: "%B %e, %Y" }}</code>
-      <div class="entry post-content">
-        {{ post.excerpt }}
+  <!-- Recent / Headline Post Card -->
+  {% assign headline_post = site.posts.first %}
+  {% if headline_post %}
+  <article class="headline-card">
+    <div class="headline-card-content">
+      <h2 class="headline-card-title">
+        <a href="{{ site.baseurl }}{{ headline_post.url }}">{{ headline_post.title }}</a>
+      </h2>
+      <div class="headline-card-excerpt post-content">
+        {{ headline_post.excerpt }}
       </div>
+    </div>
+    <div class="card-action-right">
+      <a href="{{ site.baseurl }}{{ headline_post.url }}" class="read-more">Read More &rarr;</a>
+    </div>
+  </article>
+  {% endif %}
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-  <p><a href="{{ site.baseurl }}/posts/">Do you want to see all the posts? Click me.</a></p>
+  <!-- History Section -->
+  <section class="history-section">
+    <h2 class="history-main-heading">History</h2>
+    <div class="history-grid">
+      {% for post in site.posts offset:1 limit:6 %}
+      <article class="history-card">
+        <div class="history-card-body">
+          <h3 class="history-card-title">
+            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+          </h3>
+          <div class="history-card-summary">
+            {{ post.excerpt | strip_html | truncatewords: 22 }}
+          </div>
+        </div>
+        <div class="card-action-right">
+          <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More &rarr;</a>
+        </div>
+      </article>
+      {% endfor %}
+    </div>
+  </section>
 </div>
