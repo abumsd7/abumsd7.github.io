@@ -14,7 +14,12 @@
   <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
     href="{{ site.baseurl }}/feed.xml" />
 
-  <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+  <script>
+    (function() {
+      var savedTheme = localStorage.getItem('spilledout_theme') || 'emerald';
+      document.documentElement.setAttribute('data-theme', savedTheme);
+    })();
+  </script>
 </head>
 
 <body>
@@ -22,7 +27,7 @@
   <aside class="desktop-sidebar">
     <div class="sidebar-top">
       <a href="{{ site.baseurl }}/">
-        <img class="sidebar-banner-img" src="{{ site.baseurl }}/images/banner_vertical.png" alt="Banner Vertical" />
+        <img class="sidebar-banner-img" src="{{ site.baseurl }}/images/banner_vertical_bw.png" alt="Banner Vertical" />
       </a>
     </div>
     <nav class="sidebar-navbar">
@@ -40,7 +45,7 @@
       </svg>
     </button>
     <a href="{{ site.baseurl }}/" class="mobile-header-banner">
-      <img src="{{ site.baseurl }}/images/banner.png" alt="Banner" />
+      <img src="{{ site.baseurl }}/images/banner_bw.png" alt="Banner" />
     </a>
   </header>
 
@@ -91,6 +96,15 @@
             </svg>
             <span id="shareBtnText">Share</span>
           </button>
+          <button class="footer-theme-button" id="themePickerTrigger" type="button" aria-label="Choose Theme Palette">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 21a9 9 0 1 1 0-18c4.97 0 9 3.58 9 8a4.5 4.5 0 0 1-7.2 3.6 2 2 0 0 0-2.8 2.4A4.5 4.5 0 0 1 12 21z"></path>
+              <circle cx="7.5" cy="10.5" r="1.5" fill="currentColor"></circle>
+              <circle cx="12" cy="7.5" r="1.5" fill="currentColor"></circle>
+              <circle cx="16.5" cy="10.5" r="1.5" fill="currentColor"></circle>
+            </svg>
+            <span>Theme</span>
+          </button>
         </div>
       </footer>
     </div>
@@ -101,6 +115,50 @@
     <span class="lightbox-close">&times;</span>
     <img class="lightbox-content" id="lightbox-img" alt="Preview">
     <div id="lightbox-caption"></div>
+  </div>
+
+  <!-- Theme Picker Modal -->
+  <div class="theme-picker-modal" id="themePickerModal">
+    <div class="theme-picker-card">
+      <div class="theme-picker-header">
+        <h3>Select Palette</h3>
+        <span class="theme-picker-close" id="themePickerClose">&times;</span>
+      </div>
+      <div class="theme-options-grid">
+        <button type="button" class="theme-option-btn" data-theme-id="emerald">
+          <div class="swatch-dots">
+            <span class="dot" style="background:#001b1f; border:1px solid #06d6b0;"></span>
+            <span class="dot" style="background:#06d6b0;"></span>
+            <span class="dot" style="background:#2ea9f6;"></span>
+          </div>
+          <span class="theme-name">Emerald Cyber</span>
+        </button>
+        <button type="button" class="theme-option-btn" data-theme-id="miami">
+          <div class="swatch-dots">
+            <span class="dot" style="background:#3B0855; border:1px solid #EE227D;"></span>
+            <span class="dot" style="background:#EE227D;"></span>
+            <span class="dot" style="background:#30C0B7;"></span>
+          </div>
+          <span class="theme-name">Miami</span>
+        </button>
+        <button type="button" class="theme-option-btn" data-theme-id="newyork">
+          <div class="swatch-dots">
+            <span class="dot" style="background:#0e141b; border:1px solid #F4B41A;"></span>
+            <span class="dot" style="background:#F4B41A;"></span>
+            <span class="dot" style="background:#67C3B7;"></span>
+          </div>
+          <span class="theme-name">New York</span>
+        </button>
+        <button type="button" class="theme-option-btn" data-theme-id="losangeles">
+          <div class="swatch-dots">
+            <span class="dot" style="background:#16131c; border:1px solid #F0B86E;"></span>
+            <span class="dot" style="background:#F0B86E;"></span>
+            <span class="dot" style="background:#B3E293;"></span>
+          </div>
+          <span class="theme-name">Los Angeles</span>
+        </button>
+      </div>
+    </div>
   </div>
 
   <style>
@@ -300,6 +358,66 @@
         }
       });
     }
+    // 6. Theme Picker & Dynamic Giscus Theme Synchronization
+    var themeModal = document.getElementById('themePickerModal');
+    var themeClose = document.getElementById('themePickerClose');
+    var themeTriggers = document.querySelectorAll('#themePickerTrigger');
+    var themeOptionBtns = document.querySelectorAll('.theme-option-btn');
+
+    function applyTheme(themeId) {
+      document.documentElement.setAttribute('data-theme', themeId);
+      localStorage.setItem('spilledout_theme', themeId);
+
+      themeOptionBtns.forEach(function (btn) {
+        if (btn.getAttribute('data-theme-id') === themeId) {
+          btn.classList.add('active');
+        } else {
+          btn.classList.remove('active');
+        }
+      });
+
+      // Sync Giscus iframe theme dynamically
+      var giscusIframe = document.querySelector('iframe.giscus-frame');
+      if (giscusIframe) {
+        var giscusTheme = (themeId === 'emerald') ? 'transparent_dark' : 'dark';
+        giscusIframe.contentWindow.postMessage(
+          { giscus: { setConfig: { theme: giscusTheme } } },
+          'https://giscus.app'
+        );
+      }
+    }
+
+    var activeTheme = localStorage.getItem('spilledout_theme') || 'emerald';
+    applyTheme(activeTheme);
+
+    themeTriggers.forEach(function (trigger) {
+      trigger.addEventListener('click', function (e) {
+        e.preventDefault();
+        if (themeModal) themeModal.classList.add('active');
+      });
+    });
+
+    if (themeClose && themeModal) {
+      themeClose.addEventListener('click', function () {
+        themeModal.classList.remove('active');
+      });
+    }
+
+    if (themeModal) {
+      themeModal.addEventListener('click', function (e) {
+        if (e.target === themeModal) {
+          themeModal.classList.remove('active');
+        }
+      });
+    }
+
+    themeOptionBtns.forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var tid = this.getAttribute('data-theme-id');
+        applyTheme(tid);
+        if (themeModal) themeModal.classList.remove('active');
+      });
+    });
   });
   </script>
 
