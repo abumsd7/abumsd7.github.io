@@ -18,9 +18,8 @@ tags: review tamilpost
 
 ![Yusuf Dikec](https://i.dailymail.co.uk/1s/2024/08/03/12/88103331-13705087-Yusuf_Dikec_a_Turkish_air_pistol_competitor_has_the_internet_jok-m-43_1722686180090.jpg)
 
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/tijtbm9qKgQ?si=LIPVn8X1grkZ_Fwj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</p>
+<iframe width="300" height="215" src="https://www.youtube.com/embed/tijtbm9qKgQ?si=LIPVn8X1grkZ_Fwj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 ஆனால் இவ்வளவு விஷயங்களை வெளிப்படையாக செய்யும் இவர், தன்னுடைய அன்பை வெளிப்படையாக சொல்லாமல், தன்னுடைய வெறுப்புகளை சொல்லி, விருப்புகளை  எளிதில் வெளியே சொல்லாமல், தனது உணர்ச்சிகளை வெளியே காட்டாத ஒரு introvert ஆகவும் பெரும்பாலான காட்சிகளில்  இருக்கிறார். தான் பூட்டி வைத்த உணர்ச்சிகள் உடையும் போது கண் கலங்கவும் வைக்கிறார். மொத்ததில் ஒரு சிறப்பான நடிப்பை கொடுத்துள்ளார். 
 
 கதாநாயகி மமிதா பைஜூ, Maddy என்னும் புனைபெயரில் வருகிறார். பெயருக்கு ஏற்றவாறு Dude படத்தில் வரும் Hyper character ஐ அமெரிக்காவில் வளர்த்து கூட்டி வந்தவராக இருக்கிறார். தான் சொல்ல நினைப்பதை, செய்ய நினைப்பதை filter இல்லாமல் படம் முழுதும் செய்கிறார். நடிப்பிலும் வழக்கம் போல நன்றாக  ஸ்கோர் செய்கிறார். சிரிப்பு சோகம் கோபம் பிரிவு என எல்லா உணர்வுகளும் கண் சிமிட்டும் நேரத்தில் மாற்றுகிறார். சூர்யா தன்னை சுற்றி எழுப்பும் social barrier ஐ சோர்வு அடையாமல் படம் முழுக்க உடைக்கும் பணியை சிறப்பாக செய்கிறார். இதுதான் extrovert adopts introvert என்று சொல்வார்கள் போல. எனக்கு ப்ராப்ளம் இல்ல. எனக்கு ப்ராப்ளம்..! என்னும் ஒரே  வசனத்தில் இருவரது வேறுபாடுகளும், வயது வித்தியாச காதல் பற்றிய பார்வையாளர்களின் மாறுபட்ட எண்ணமும்  படம் முழுக்க எதிரொலிக்கிறது.  
