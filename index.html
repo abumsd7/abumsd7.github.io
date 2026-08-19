@@ -6,7 +6,16 @@ layout: default
   <!-- Headline Header Section -->
   <header class="headline-header">
     <h1 class="headline-main-title">Headliner</h1>
-    <p class="headline-date">Last updated on {{ "now" | date: "%A, %B %d, %Y , %H:%M" }}</p>
+    <div class="headline-meta-row">
+      <p class="headline-date">Last updated on {{ "now" | date: "%A, %B %d, %Y , %H:%M" }}</p>
+      <span class="global-views-badge" id="globalViewsBadge">
+        <svg class="views-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+          <circle cx="12" cy="12" r="3"></circle>
+        </svg>
+        <span id="globalViewsCount">...</span>
+      </span>
+    </div>
   </header>
 
   <!-- Recent / Headline Post Card -->
@@ -49,3 +58,29 @@ layout: default
     </div>
   </section>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var badge = document.getElementById('globalViewsBadge');
+  var countSpan = document.getElementById('globalViewsCount');
+  if (!badge || !countSpan) return;
+
+  var apiUrl = "{{ site.view_counter_api | default: 'https://views.spilledout.cc' }}";
+  var endpoint = apiUrl.replace(/\/+$/, '') + '/api/total';
+
+  fetch(endpoint)
+    .then(function(res) {
+      if (!res.ok) throw new Error('Status ' + res.status);
+      return res.json();
+    })
+    .then(function(data) {
+      if (typeof data.totalViews === 'number') {
+        countSpan.textContent = data.totalViews.toLocaleString() + (data.totalViews === 1 ? ' total view' : ' total views');
+      }
+    })
+    .catch(function(err) {
+      console.warn('Global counter fetch error:', err);
+      badge.style.display = 'none';
+    });
+});
+</script>
