@@ -1,0 +1,25 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var shareBtn = document.getElementById('footerShareBtn');
+  var shareText = document.getElementById('shareBtnText');
+  if (!shareBtn) return;
+
+  shareBtn.addEventListener('click', function () {
+    var shareData = {
+      title: document.title,
+      url: window.location.href
+    };
+    if (navigator.share) {
+      navigator.share(shareData).catch(function () {});
+    } else if (navigator.clipboard) {
+      navigator.clipboard.writeText(window.location.href).then(function () {
+        if (shareText) {
+          var orig = shareText.innerText;
+          shareText.innerText = 'Copied!';
+          setTimeout(function () { shareText.innerText = orig; }, 2000);
+        }
+      });
+    }
+  });
+});
+</script>

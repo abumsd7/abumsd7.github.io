@@ -1,0 +1,19 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var links = document.querySelectorAll('.post-content a');
+  links.forEach(function (link) {
+    var href = link.href || '';
+    var ytMatch = href.match(/(?:https?:\/\/)?(?:www\.)?(?:youtube\.com\/(?:watch\?v=|embed\/)|youtu\.be\/)([a-zA-Z0-9_-]{11})/);
+    if (ytMatch && ytMatch[1]) {
+      var videoId = ytMatch[1];
+      var parentP = link.closest('p');
+      if (parentP && parentP.textContent.trim() === link.textContent.trim()) {
+        var container = document.createElement('div');
+        container.className = 'video-container';
+        container.innerHTML = '<iframe src="https://www.youtube-nocookie.com/embed/' + videoId + '" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>';
+        parentP.replaceWith(container);
+      }
+    }
+  });
+});
+</script>

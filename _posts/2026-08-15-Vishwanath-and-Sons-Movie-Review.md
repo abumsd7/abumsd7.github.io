@@ -19,7 +19,7 @@ tags: review tamilpost
 
 ![Yusuf Dikec](https://i.dailymail.co.uk/1s/2024/08/03/12/88103331-13705087-Yusuf_Dikec_a_Turkish_air_pistol_competitor_has_the_internet_jok-m-43_1722686180090.jpg)
 
-<iframe width="300" height="215" src="https://www.youtube.com/embed/tijtbm9qKgQ?si=LIPVn8X1grkZ_Fwj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+[https://www.youtube.com/watch?v=tijtbm9qKgQ](https://www.youtube.com/watch?v=tijtbm9qKgQ)
 
 ஆனால் இவ்வளவு விஷயங்களை வெளிப்படையாக செய்யும் இவர், தன்னுடைய அன்பை வெளிப்படையாக சொல்லாமல், தன்னுடைய வெறுப்புகளை சொல்லி, விருப்புகளை  எளிதில் வெளியே சொல்லாமல், தனது உணர்ச்சிகளை வெளியே காட்டாத ஒரு introvert ஆகவும் பெரும்பாலான காட்சிகளில்  இருக்கிறார். தான் பூட்டி வைத்த உணர்ச்சிகள் உடையும் போது கண் கலங்கவும் வைக்கிறார். மொத்ததில் ஒரு சிறப்பான நடிப்பை கொடுத்துள்ளார். 
 

@@ -32,37 +32,3 @@ layout: default
   </div>
   {% include giscus.html %}
 </article>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var badge = document.getElementById('postViewsBadge');
-  var countSpan = document.getElementById('postViewsCount');
-  if (!badge || !countSpan) return;
-
-  var apiUrl = "{{ site.view_counter_api | default: 'https://views.spilledout.cc' }}";
-  var postPath = "{{ page.url }}";
-  
-  // Prevent duplicate increments within same session
-  var sessionKey = 'viewed_' + postPath;
-  var alreadyViewed = sessionStorage.getItem(sessionKey);
-  var incParam = alreadyViewed ? '0' : '1';
-
-  var endpoint = apiUrl.replace(/\/+$/, '') + '/api/views?id=' + encodeURIComponent(postPath) + '&inc=' + incParam;
-
-  fetch(endpoint)
-    .then(function(res) {
-      if (!res.ok) throw new Error('Status ' + res.status);
-      return res.json();
-    })
-    .then(function(data) {
-      if (typeof data.views === 'number') {
-        countSpan.textContent = data.views.toLocaleString() + (data.views === 1 ? ' view' : ' views');
-        sessionStorage.setItem(sessionKey, '1');
-      }
-    })
-    .catch(function(err) {
-      console.warn('View counter fetch error:', err);
-      badge.style.display = 'none';
-    });
-});
-</script>

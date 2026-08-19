@@ -1,0 +1,31 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var modal = document.getElementById('image-lightbox');
+  var modalImg = document.getElementById('lightbox-img');
+  var captionText = document.getElementById('lightbox-caption');
+  var closeBtn = document.querySelector('.lightbox-close');
+
+  if (!modal || !modalImg) return;
+
+  var postImages = document.querySelectorAll('.post-content img');
+  postImages.forEach(function (img) {
+    img.addEventListener('click', function () {
+      modal.style.display = 'block';
+      modalImg.src = this.src;
+      captionText.innerHTML = this.alt || '';
+    });
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', function () {
+      modal.style.display = 'none';
+    });
+  }
+
+  modal.addEventListener('click', function (e) {
+    if (e.target === modal || e.target === closeBtn) {
+      modal.style.display = 'none';
+    }
+  });
+});
+</script>

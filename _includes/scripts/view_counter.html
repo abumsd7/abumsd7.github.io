@@ -1,0 +1,54 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var API_BASE_URL = "{{ site.view_counter_api | default: 'https://views.spilledout.cc' }}".replace(/\/+$/, '');
+
+  // Post View Counter
+  var postBadge = document.getElementById('postViewsBadge');
+  var postCountSpan = document.getElementById('postViewsCount');
+  if (postBadge && postCountSpan) {
+    var postPath = window.location.pathname;
+    var sessionKey = 'viewed_' + postPath;
+    var alreadyViewed = sessionStorage.getItem(sessionKey);
+    var incParam = alreadyViewed ? '0' : '1';
+    var endpoint = API_BASE_URL + '/api/views?id=' + encodeURIComponent(postPath) + '&inc=' + incParam;
+
+    fetch(endpoint)
+      .then(function (res) {
+        if (!res.ok) throw new Error('Status ' + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        if (typeof data.views === 'number') {
+          postCountSpan.textContent = data.views.toLocaleString() + (data.views === 1 ? ' view' : ' views');
+          sessionStorage.setItem(sessionKey, '1');
+        }
+      })
+      .catch(function (err) {
+        console.warn('Post view counter error:', err);
+        postBadge.style.display = 'none';
+      });
+  }
+
+  // Global Homepage View Counter
+  var globalBadge = document.getElementById('globalViewsBadge');
+  var globalCountSpan = document.getElementById('globalViewsCount');
+  if (globalBadge && globalCountSpan) {
+    var globalEndpoint = API_BASE_URL + '/api/total';
+
+    fetch(globalEndpoint)
+      .then(function (res) {
+        if (!res.ok) throw new Error('Status ' + res.status);
+        return res.json();
+      })
+      .then(function (data) {
+        if (typeof data.totalViews === 'number') {
+          globalCountSpan.textContent = data.totalViews.toLocaleString() + (data.totalViews === 1 ? ' total view' : ' total views');
+        }
+      })
+      .catch(function (err) {
+        console.warn('Global counter fetch error:', err);
+        globalBadge.style.display = 'none';
+      });
+  }
+});
+</script>

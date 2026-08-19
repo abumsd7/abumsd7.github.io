@@ -1,0 +1,12 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var links = document.querySelectorAll('a[href^="http://"], a[href^="https://"]');
+  links.forEach(function (link) {
+    var host = link.hostname;
+    if (host && host !== window.location.hostname && host.indexOf('spilledout.cc') === -1) {
+      link.setAttribute('target', '_blank');
+      link.setAttribute('rel', 'noopener noreferrer');
+    }
+  });
+});
+</script>

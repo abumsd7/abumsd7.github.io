@@ -58,29 +58,3 @@ layout: default
     </div>
   </section>
 </div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-  var badge = document.getElementById('globalViewsBadge');
-  var countSpan = document.getElementById('globalViewsCount');
-  if (!badge || !countSpan) return;
-
-  var apiUrl = "{{ site.view_counter_api | default: 'https://views.spilledout.cc' }}";
-  var endpoint = apiUrl.replace(/\/+$/, '') + '/api/total';
-
-  fetch(endpoint)
-    .then(function(res) {
-      if (!res.ok) throw new Error('Status ' + res.status);
-      return res.json();
-    })
-    .then(function(data) {
-      if (typeof data.totalViews === 'number') {
-        countSpan.textContent = data.totalViews.toLocaleString() + (data.totalViews === 1 ? ' total view' : ' total views');
-      }
-    })
-    .catch(function(err) {
-      console.warn('Global counter fetch error:', err);
-      badge.style.display = 'none';
-    });
-});
-</script>

@@ -1,0 +1,62 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var themeModal = document.getElementById('themePickerModal');
+  var themeClose = document.getElementById('themePickerClose');
+  var themeTriggers = document.querySelectorAll('#themePickerTrigger');
+  var themeOptionBtns = document.querySelectorAll('.theme-option-btn');
+
+  function applyTheme(themeId) {
+    document.documentElement.setAttribute('data-theme', themeId);
+    localStorage.setItem('spilledout_theme', themeId);
+
+    themeOptionBtns.forEach(function (btn) {
+      if (btn.getAttribute('data-theme-id') === themeId) {
+        btn.classList.add('active');
+      } else {
+        btn.classList.remove('active');
+      }
+    });
+
+    var giscusIframe = document.querySelector('iframe.giscus-frame');
+    if (giscusIframe) {
+      var giscusTheme = (themeId === 'emerald') ? 'transparent_dark' : 'dark';
+      giscusIframe.contentWindow.postMessage(
+        { giscus: { setConfig: { theme: giscusTheme } } },
+        'https://giscus.app'
+      );
+    }
+  }
+
+  var activeTheme = localStorage.getItem('spilledout_theme') || 'emerald';
+  applyTheme(activeTheme);
+
+  themeTriggers.forEach(function (trigger) {
+    trigger.addEventListener('click', function (e) {
+      e.preventDefault();
+      if (themeModal) themeModal.classList.add('active');
+    });
+  });
+
+  if (themeClose && themeModal) {
+    themeClose.addEventListener('click', function () {
+      themeModal.classList.remove('active');
+    });
+  }
+
+  if (themeModal) {
+    themeModal.addEventListener('click', function (e) {
+      if (e.target === themeModal) {
+        themeModal.classList.remove('active');
+      }
+    });
+  }
+
+  themeOptionBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var tid = this.getAttribute('data-theme-id');
+      applyTheme(tid);
+      if (themeModal) themeModal.classList.remove('active');
+    });
+  });
+});
+</script>

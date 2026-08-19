@@ -1,0 +1,44 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var scrollBtn = document.getElementById('floatingScrollBtn');
+  if (!scrollBtn) return;
+
+  var iconDown = scrollBtn.querySelector('.icon-down');
+  var iconUp = scrollBtn.querySelector('.icon-up');
+
+  function updateScrollBtnState() {
+    var scrollY = window.scrollY || window.pageYOffset;
+    var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+
+    if (scrollY <= 60 || (maxScroll > 0 && scrollY >= maxScroll - 60)) {
+      scrollBtn.classList.add('scroll-btn-hidden');
+    } else {
+      scrollBtn.classList.remove('scroll-btn-hidden');
+      if (scrollY > (maxScroll / 2)) {
+        scrollBtn.classList.remove('scroll-to-bottom');
+        scrollBtn.classList.add('scroll-to-top');
+        if (iconDown) iconDown.style.display = 'none';
+        if (iconUp) iconUp.style.display = 'block';
+      } else {
+        scrollBtn.classList.remove('scroll-to-top');
+        scrollBtn.classList.add('scroll-to-bottom');
+        if (iconDown) iconDown.style.display = 'block';
+        if (iconUp) iconUp.style.display = 'none';
+      }
+    }
+  }
+
+  window.addEventListener('scroll', updateScrollBtnState);
+  window.addEventListener('resize', updateScrollBtnState);
+  updateScrollBtnState();
+
+  scrollBtn.addEventListener('click', function () {
+    if (scrollBtn.classList.contains('scroll-to-top')) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else {
+      var targetTop = document.documentElement.scrollHeight - window.innerHeight;
+      window.scrollTo({ top: targetTop, behavior: 'smooth' });
+    }
+  });
+});
+</script>
