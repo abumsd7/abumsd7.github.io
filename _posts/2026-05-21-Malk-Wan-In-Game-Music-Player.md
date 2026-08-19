@@ -6,6 +6,8 @@ category: gtamodding
 tags: gta3 gtavc gtasa music audio modding
 ---
 
+To read the original GTAForums post, [click here](https://gtaforums.com/topic/1006039-asi3vcsa-malk-wan-walkman-styled-in-game-music-player/).
+
 Named after "SUMO" (the in-game parody of Sony Corporation).  
 Play in-game radio stations and MP3 songs while on foot — no need to sit in a car.
 

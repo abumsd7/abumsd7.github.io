@@ -6,6 +6,8 @@ category: gtamodding
 tags: gtavc gtasa time hud modding
 ---
 
+To read the original GTAForums post, [click here](https://gtaforums.com/topic/958708-asivcsa-wrist-watch/).
+
 Tommy wears a golden watch so why not use a golden watch to display time? It's better than using a phone because there were no modern phones in the 1980s.
 
 <!--more-->

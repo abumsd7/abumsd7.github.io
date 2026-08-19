@@ -6,6 +6,8 @@ category: gtamodding
 tags: gta3 gtavc gtasa font text modding
 ---
 
+To read the original GTAForums post, [click here](https://gtaforums.com/topic/1006726-asiiiivcsa-easyfont-v10-ttfotf-font-replacement-system/).
+
 **EasyFont v1.0** — TTF/OTF Font Rendering System that replaces the existing bitmap system for GTA III, VC, and SA.
 
 <!--more-->

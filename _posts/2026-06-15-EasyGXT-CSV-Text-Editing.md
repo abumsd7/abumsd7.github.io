@@ -6,6 +6,8 @@ category: gtamodding
 tags: gta3 gtavc gtasa text modding
 ---
 
+To read the original GTAForums post, [click here](https://gtaforums.com/topic/1006231-asiiiivcsa-easygxt-v12/).
+
 A by-product of CharlesVercetti's GTA V HUD mod. Isolated and expanded for the legacy trilogy.  
 Replaces GXT files with a merged CSV document for easy and live editing. Reads `.fxt` files in your CLEO folder.
 

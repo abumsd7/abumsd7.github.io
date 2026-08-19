@@ -6,6 +6,8 @@ category: gtamodding
 tags: gta3 gtavc gta5 hud radar menu modding
 ---
 
+To read the original GTAForums post, [click here](https://gtaforums.com/topic/670360-asiiiivc-rectangular-hud-gta-v-hud/).
+
 A modification for GTA III and GTA Vice City which adds rectangular radar, HUD, and menu elements based off the GTA V HUD!
 
 <!--more-->
@@ -45,7 +47,7 @@ A modification for GTA III and GTA Vice City which adds rectangular radar, HUD, 
   - [Rect-HUD v1.2 Mediafire Mirror](http://www.mediafire.com/file/aopp4b5pnp42wsg/GTA_III_Rect-HUD_v1.2.zip/file)
 
 ### Screenshots:
-![Animated Demo](https://gtaforums.com/uploads/monthly_2026_05/image.gif.f35d7ff520d4f9e51aaa897f15cd6dd7.gif)
+![Animated Logo](https://gtaforums.com/uploads/monthly_2026_05/image.gif.f35d7ff520d4f9e51aaa897f15cd6dd7.gif)
 ![VC Screenshot 1](https://www.mediafire.com/convkey/3ccd/e8bjpcknfn7vuehzg.jpg)
 ![VC Screenshot 2](https://www.mediafire.com/convkey/9418/0abu8pjqnd2fu83zg.jpg)
 ![III Screenshot](https://www.mediafire.com/convkey/3fec/l0f0xddf079c8ydzg.jpg?size_id=8)

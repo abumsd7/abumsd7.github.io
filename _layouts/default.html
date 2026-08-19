@@ -418,6 +418,19 @@
         if (themeModal) themeModal.classList.remove('active');
       });
     });
+
+    // 7. Auto-open all external links in a new tab
+    function handleExternalLinks() {
+      var links = document.querySelectorAll('a[href^="http://"], a[href^="https://"]');
+      links.forEach(function (link) {
+        var host = link.hostname;
+        if (host && host !== window.location.hostname && host.indexOf('spilledout.cc') === -1) {
+          link.setAttribute('target', '_blank');
+          link.setAttribute('rel', 'noopener noreferrer');
+        }
+      });
+    }
+    handleExternalLinks();
   });
   </script>
 
