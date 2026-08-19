@@ -18,7 +18,7 @@ layout: default
     <div class="date">
       Written on {{ page.date | date: "%B %e, %Y" }}
     </div>
-    <span class="post-views-badge" id="postViewsBadge" style="display: none;">
+    <span class="post-views-badge" id="postViewsBadge">
       <svg class="views-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
         <circle cx="12" cy="12" r="3"></circle>
@@ -33,14 +33,13 @@ layout: default
   {% include giscus.html %}
 </article>
 
-{% if site.view_counter_api %}
 <script>
 document.addEventListener('DOMContentLoaded', function () {
   var badge = document.getElementById('postViewsBadge');
   var countSpan = document.getElementById('postViewsCount');
   if (!badge || !countSpan) return;
 
-  var apiUrl = "{{ site.view_counter_api }}";
+  var apiUrl = "{{ site.view_counter_api | default: 'https://views.spilledout.cc' }}";
   var postPath = "{{ page.url }}";
   
   // Prevent duplicate increments within same session
@@ -57,15 +56,13 @@ document.addEventListener('DOMContentLoaded', function () {
     })
     .then(function(data) {
       if (typeof data.views === 'number') {
-        countSpan.textContent = data.views.toLocaleString() + ' views';
-        badge.style.display = 'inline-flex';
+        countSpan.textContent = data.views.toLocaleString() + (data.views === 1 ? ' view' : ' views');
         sessionStorage.setItem(sessionKey, '1');
       }
     })
     .catch(function(err) {
-      // Badge stays hidden if Worker is offline or not yet deployed
+      console.warn('View counter fetch error:', err);
       badge.style.display = 'none';
     });
 });
 </script>
-{% endif %}
