@@ -2,6 +2,7 @@
 layout: post
 title: How To ; Be a Master Procrastinator
 date: 2023-09-02 22:30:00 +0530
+category: satire
 tags: how_to_guide surreal explanatory human
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: Proctoring and Your Personality
 date: 2021-01-04 19:45:00 +0530
+category: thoughts
 tags: rants explanatory human
 ---
 

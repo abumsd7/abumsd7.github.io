@@ -2,6 +2,7 @@
 layout: post
 title: Rain, Light and the Temperature
 date: 2021-01-03 12:40:00 +0530
+category: stories
 tags: story human supernatural fantasy technology
 ---
 

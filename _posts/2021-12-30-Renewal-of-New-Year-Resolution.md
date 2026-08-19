@@ -2,6 +2,7 @@
 layout: post
 title: Renewal of New Year Resolution(?)
 date: 2021-12-30 22:05:00 +0530
+category: tech
 tags: reminder yearly human
 ---
 

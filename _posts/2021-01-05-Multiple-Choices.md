@@ -2,6 +2,7 @@
 layout: post
 title: தேர்வினால் திரியும் நிகழ்காலக் கயிறு
 date: 2021-01-05 19:45:00 +0530
+category: thoughts
 tags: rants tamilpost human
 ---
 

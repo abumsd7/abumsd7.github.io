@@ -15,5 +15,17 @@ permalink: /profile/
     <div class="profile-social-section">
       {% include social_cards.html %}
     </div>
+
+    <div class="profile-about-section">
+      <h2 class="profile-section-title">About this Blog</h2>
+      <ul class="profile-about-list">
+        <li>Just read through First Drops, you might have an idea about what's going on here.</li>
+        <li>There is no particular genre I am trying to fulfill here. All kinds of stuff will be tried out.</li>
+        <li>Since this is a blog, of all sites.</li>
+        <li>Blog hosted on GitHub Pages and runs on Jekyll, which generates static sites from Markdown language.</li>
+        <li>Based on a tweaked template of Jekyll called <a href="https://github.com/barryclark/jekyll-now" target="_blank" rel="noopener">jekyll-now</a> by Barry Clark. Further added CSS enhancments with Antigravity IDE.</li>
+        <li>Posts will be on both Tamil and English.</li>
+      </ul>
+    </div>
   </div>
 </div>

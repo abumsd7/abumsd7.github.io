@@ -2,6 +2,7 @@
 layout: post
 title: தினுசான திரை அனுபவம்... 
 date: 2023-08-30 22:30:00 +0530
+category: reviews
 tags: story rants review human tamilpost
 ---
 

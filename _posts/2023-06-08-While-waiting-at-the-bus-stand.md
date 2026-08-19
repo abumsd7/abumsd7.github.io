@@ -2,6 +2,7 @@
 layout: post
 title: பேருந்து நிலையக் காத்திருப்பிலே...
 date: 2023-06-08 20:30:00 +0530
+category: stories
 tags: story rants imagination human tamilpost
 ---
 

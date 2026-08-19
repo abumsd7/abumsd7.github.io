@@ -2,6 +2,7 @@
 layout: post
 title: விஸ்வநாத் அண்ட் சன்ஸ் திரை விமர்சனம்
 date: 2026-08-15 20:00:00 +0530
+category: reviews
 tags: review tamilpost
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: The Multiversal Experience
 date: 2023-06-06 22:30:00 +0530
+category: stories
 tags: story multiverse surreal imagination human
 ---
 

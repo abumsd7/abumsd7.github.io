@@ -2,6 +2,7 @@
 layout: post
 title: Goodbye to free domains...
 date: 2024-01-05 22:30:00 +0530
+category: tech
 tags: rants reminder yearly
 ---
 

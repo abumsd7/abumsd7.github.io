@@ -2,6 +2,7 @@
 layout: post
 title: First Drops
 date: 2020-12-31 00:00:00 +0530
+category: thoughts
 tags: surreal imagination explanatory human
 ---
 

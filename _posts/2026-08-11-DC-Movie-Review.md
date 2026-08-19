@@ -2,6 +2,7 @@
 layout: post
 title: DC திரை விமர்சனம்
 date: 2026-08-11 23:00:00 +0530
+category: reviews
 tags: review tamilpost
 ---
 

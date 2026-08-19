@@ -2,6 +2,7 @@
 layout: post
 title: Five pigeons in a fine noon
 date: 2022-01-21 21:56:00 +0530
+category: stories
 tags: story animals fantasy
 ---
 
