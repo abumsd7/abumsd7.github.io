@@ -40,6 +40,9 @@ footer-links:
 # Giscus comment system (github.com/giscus/giscus)
 giscus: true
 
+# Cloudflare Worker View Counter API (deploy from cloudflare-worker/worker.js)
+view_counter_api: "https://views.spilledout.cc"
+
 # Enter your Google Analytics web tracking code (e.g. UA-2110908-2) to activate tracking
 google_analytics: G-0BJ0D871EK
 

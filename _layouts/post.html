@@ -12,9 +12,19 @@ layout: default
     {% capture tag_name %}{{ tag }}{% endcapture %}
     <a href="{{ site.baseurl }}/tag/{{ tag_name }}"><code class="tag_format"><nobr>{{ tag_name }}</nobr></code></a>
     {% endfor %}
+  </span>
+
+  <div class="post-meta-row">
+    <div class="date">
+      Written on {{ page.date | date: "%B %e, %Y" }}
+    </div>
+    <span class="post-views-badge" id="postViewsBadge" style="display: none;">
+      <svg class="views-icon" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+        <circle cx="12" cy="12" r="3"></circle>
+      </svg>
+      <span id="postViewsCount">...</span>
     </span>
-  <div class="date">
-    Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
   <div class="entry post-content">
@@ -22,3 +32,40 @@ layout: default
   </div>
   {% include giscus.html %}
 </article>
+
+{% if site.view_counter_api %}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var badge = document.getElementById('postViewsBadge');
+  var countSpan = document.getElementById('postViewsCount');
+  if (!badge || !countSpan) return;
+
+  var apiUrl = "{{ site.view_counter_api }}";
+  var postPath = "{{ page.url }}";
+  
+  // Prevent duplicate increments within same session
+  var sessionKey = 'viewed_' + postPath;
+  var alreadyViewed = sessionStorage.getItem(sessionKey);
+  var incParam = alreadyViewed ? '0' : '1';
+
+  var endpoint = apiUrl.replace(/\/+$/, '') + '/api/views?id=' + encodeURIComponent(postPath) + '&inc=' + incParam;
+
+  fetch(endpoint)
+    .then(function(res) {
+      if (!res.ok) throw new Error('Status ' + res.status);
+      return res.json();
+    })
+    .then(function(data) {
+      if (typeof data.views === 'number') {
+        countSpan.textContent = data.views.toLocaleString() + ' views';
+        badge.style.display = 'inline-flex';
+        sessionStorage.setItem(sessionKey, '1');
+      }
+    })
+    .catch(function(err) {
+      // Badge stays hidden if Worker is offline or not yet deployed
+      badge.style.display = 'none';
+    });
+});
+</script>
+{% endif %}
